@@ -1,0 +1,74 @@
+.card_Detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.detail_container {
+    max-width: 700px;
+    width: 100%;
+}
+
+.detail.item {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 25px;
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 4px solid;
+    border-image-slice: 1;
+    border-width: 4px;
+    border-image-source: linear-gradient(270deg, #ff0080, #7928ca, #ff0080);
+    animation: borderShift 3s linear infinite;
+}
+
+@keyframes borderShift {
+    0% {
+        border-image-source: linear-gradient(270deg, #ff0080, #7928ca, #ff0080);
+    }
+    50% {
+        border-image-source: linear-gradient(270deg, #00ffcc, #ffdd00, #00ffcc);
+    }
+    100% {
+        border-image-source: linear-gradient(270deg, #ff0080, #7928ca, #ff0080);
+    }
+}
+
+.detail.item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+}
+
+.detail.item .title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.detail.item h2, .detail.item h4 {
+    margin: 10px 0;
+}
+
+.detail.item button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #ffcc00;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.detail.item button:hover {
+    background: #ffd633;
+    transform: scale(1.05);
+}

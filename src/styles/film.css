@@ -1,0 +1,65 @@
+.card {
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* контент */
+.item_films {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.item_films p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.4;
+}
+
+.item_films img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+.item_films img:hover {
+    transform: scale(1.05);
+}
+
+.details-btn {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #222;
+    border-color: aqua;
+    transition: all 0.3s ease;
+}
+
+.details-btn:hover {
+    background-color: #ffcc00;
+    border-color: #ffcc00;
+    color: #222;
+}
