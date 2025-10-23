@@ -12,7 +12,7 @@ export const router = createBrowserRouter([
             {index:true ,  element: <MainPage/>},
             {path:'films' ,  element: <Filmsist/>},
             {path:'films/:id', element: <Details/>},
-
+            {path: '*' , element: <h1>Not Found 404</h1> }
             // {path:'catalog' ,  element: <Caralog/>},
         ]
     }
